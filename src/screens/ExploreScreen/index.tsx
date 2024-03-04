@@ -23,6 +23,7 @@ const ExploreScreen = ({navigation}: Props) => {
     <SafeAreaView style={styles.container}>
       <StatusBar 
         barStyle="light-content"
+        translucent={false}
         backgroundColor={colors["light"].BROWN}
       />
       <LinearGradient colors={[colors["light"].BROWN, colors["light"].PURPLE_700]} style=

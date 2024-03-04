@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native'
+import { StatusBar, StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { colors } from '../../constants/theme'
 import styling from './profile.style'
@@ -22,6 +22,11 @@ const ProfileScreen = ({navigation}: Props) => {
 
   return (
     <LinearGradient colors={[colors["light"].BROWN, colors["light"].PURPLE_700]} style={styles.container}>
+      <StatusBar 
+        barStyle="light-content"
+        translucent={false}
+        backgroundColor={colors["light"].BROWN}
+      />
       <Header text={"Profile"} />
 
       <TouchableOpacity

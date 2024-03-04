@@ -15,18 +15,18 @@ const Header = (props: {text?: string}) => {
     const styles = styling()    
 
   return (
-    <>
+    <View style={styles.container}>
       
       <View style={styles.topIcon}>
-        <FontAwesome6 name="canadian-maple-leaf" size={36} color={colors["light"].PINK} />
+        <FontAwesome6 name="canadian-maple-leaf" size={28} color={colors["light"].PINK} />
       </View>
 
-        <View style={styles.topContainer}>
+        <View style={styles.middleContainer}>
         <View style={[styles.headerItem, styles.curve1]}>
         </View>
 
         <View  style={[styles.headerItem, styles.homeCircle]}>
-          <MaterialCommunityIcons name="bird" size={36} color="black" />
+          <MaterialCommunityIcons name="bird" size={28} color="black" />
         </View>
 
         <View  style={[styles.headerItem, styles.curve2]}>
@@ -34,11 +34,11 @@ const Header = (props: {text?: string}) => {
       </View>
 
       <View style={styles.homeTextWrapper}>
-      <Feather name="plus" size={14} color={colors["light"].PINK} />
+      <Feather name="plus" size={12} color={colors["light"].PINK} />
         <Text style={styles.homeText}>{route.name}</Text>
-        <Feather name="plus" size={14} color={colors["light"].PINK} />
+        <Feather name="plus" size={12} color={colors["light"].PINK} />
       </View>
-</>
+</View>
   )
 }
 

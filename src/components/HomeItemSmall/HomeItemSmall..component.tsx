@@ -17,7 +17,7 @@ const HomeItemSmall = (props: HomeItemSmallProps) => {
     <LinearGradient colors={[colors["light"].LIGHT, colors["light"].BLUE_700]} style={styles.container}>
         <View style={styles.bottomBottomPart}>
             <View style={styles.bottomIcon}>
-              {icon ||<Entypo name="open-book" size={30} color={colors["light"].BLUE} />}
+              {icon ||<Entypo name="open-book" size={28} color={colors["light"].BLUE} />}
             </View>
             <Text style={styles.bottomBottomPartSubText}>
                 {topText || 'Library'}

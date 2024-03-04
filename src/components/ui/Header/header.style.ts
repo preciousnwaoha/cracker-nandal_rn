@@ -3,20 +3,22 @@ import { colors } from "../../../constants/theme"
 
 const styles = () =>
     StyleSheet.create({
-   
+   container: {
+        // borderWidth: 1,
+        paddingVertical: 12,
+    },
     topIcon: {
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 60,
-
     },
-    topContainer: {
+    middleContainer: {
         // flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         gap: 10,
         paddingTop: 10,
+        // borderWidth: 1,
     },
 
     headerItem: {
@@ -26,8 +28,8 @@ const styles = () =>
     },
 
     homeCircle: {
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         borderRadius: 35,
         backgroundColor: colors["light"].PINK,
         justifyContent: 'center',
@@ -35,8 +37,8 @@ const styles = () =>
         elevation: 2,
     },
     curve1: {
-        width: 80,
-        height: 40,
+        width: 76,
+        height: 38,
         borderWidth: 3, 
         borderTopStartRadius: 20,
         borderBottomStartRadius: 20,
@@ -44,8 +46,8 @@ const styles = () =>
         
     },
     curve2: {
-        width: 80,
-        height: 40,
+        width: 76,
+        height: 38,
         borderWidth: 3, 
         borderTopEndRadius: 20,
         borderBottomEndRadius: 20,
@@ -55,8 +57,8 @@ const styles = () =>
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 20,
         gap: 30,
+        // borderWidth: 1,
     },
     homeText: {
         fontSize: 20,

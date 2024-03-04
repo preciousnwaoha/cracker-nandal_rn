@@ -65,6 +65,7 @@ const HomeScreen = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar 
         barStyle="light-content"
+        translucent={false}
         backgroundColor={colors["light"].BROWN}
       />
       <LinearGradient colors={[colors["light"].BROWN, colors["light"].PURPLE_700]} style=
@@ -72,10 +73,27 @@ const HomeScreen = () => {
         
       <Header />
 
+      <View style={styles.bottomWrapper}>
+
+        <View style={styles.dots} />
+
+        <View>
+          <Text style={{
+            fontSize: 20,
+            fontWeight: 'bold',
+            color: colors["light"].PINK,
+          }}>Home</Text>
+        </View>
+
+        <View style={styles.dots} />
+        
+      </View>
 
       <View style={{
-        marginBottom: 8,
-      }}>
+        height: 8
+      }} />
+
+      <View>
         <FlatList
           style={styles.homeItemsContainer}
           data={HOME_ITEMS}
@@ -99,29 +117,14 @@ const HomeScreen = () => {
         />
       </View>
       
-      <View style={{
-        padding: 40,
-      }}>
+      <View style={styles.bottomPinkBoxWrapper}>
         <View
         style={styles.bottomPinkBox} />
       </View>
 
       
       
-      <View style={styles.bottomWrapper}>
-
-        <View style={styles.dots} />
-
-          <View>
-            <Text style={{
-              fontSize: 20,
-              fontWeight: 'bold',
-              color: colors["light"].PINK,
-            }}>Home</Text>
-          </View>
-
-          <View style={styles.dots} />
-      </View>
+      
     </LinearGradient>
     </SafeAreaView>
     

@@ -3,7 +3,7 @@ import { colors } from '../../constants/theme';
 
 const styles = () => StyleSheet.create({
     container: {
-        width: 84,
+        width: 80,
         borderRadius: 15,
         elevation: 21,
     },

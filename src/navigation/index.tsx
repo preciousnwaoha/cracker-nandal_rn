@@ -49,7 +49,7 @@ const Navigation = () => {
             presentation: 'transparentModal',
             gestureDirection: 'horizontal',
             gestureEnabled: Boolean(Platform.OS === 'ios'),
-            animation: 'slide_from_right',
+            // animation: 'slide_from_right',
             // detachPreviousScreen: false,
             
         }}

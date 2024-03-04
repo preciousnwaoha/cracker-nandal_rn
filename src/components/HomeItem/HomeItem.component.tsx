@@ -24,7 +24,7 @@ const HomeItem = (props: HomeItemProps) => {
     colors={[
       colors["light"].PINK, colors["light"].PINK, colors["light"].LIGHT, colors["light"].BLUE_700, colors["light"].BLUE_700, colors["light"].BLUE_700]} style={styles.container}>
       <View  style={styles.topPart}>
-      <FontAwesome6 name="user-large" size={40} color={colors["light"].BLUE_700} />
+      <FontAwesome6 name="user-large" size={38} color={colors["light"].BLUE_700} />
       </View>
       
       <View style={styles.bottomPart}>
@@ -41,7 +41,7 @@ const HomeItem = (props: HomeItemProps) => {
             <View style={[styles.bottomIcon, {
               backgroundColor: routeName === route.name ? colors["light"].BLUE_700 : colors["light"].PINK,
             }]}>
-              {topIcon || <Entypo name="open-book" size={30} color="black" />}
+              {topIcon || <Entypo name="open-book" size={28} color="black" />}
             </View>
             <Text style={styles.bottomTopPartText}>
                 {bottomText || 'Library'}
